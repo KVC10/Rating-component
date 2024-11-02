@@ -11,10 +11,11 @@ buttons.forEach((button) => {
     const count = Number(e.target.innerText);
     selected.textContent = `You selected ${count} out of 5`;
     for (let i = 0; i < count; i++) {
-      const div = document.createElement("div");
-      div.className = "star";
       const img = document.createElement("img");
       img.src = "./images/icon-star.svg";
+      const div = document.createElement("div");
+      div.className = "star";
+
       div.appendChild(img);
       starContainer.appendChild(div);
     }
